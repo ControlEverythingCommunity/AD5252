@@ -8,7 +8,7 @@ This Device is available from ControlEverything.com [SKU: AD5252_I2CPOT_10K]
 
 https://www.controleverything.com/content/Potentiometers?sku=AD5252_I2CPOT_10K
 
-This Sample code can be used with Raspberry pi, Arduino and Particle.
+This Sample code can be used with Raspberry pi, Arduino, Particle and Beaglebone Black.
 
 ## Java
 Download and install pi4j library on Raspberry pi. Steps to install pi4j are provided at:
@@ -61,5 +61,19 @@ https://build.particle.io/build/
 Verify and flash the code on your Photon. Code output is shown in logs at dashboard:
 
 https://dashboard.particle.io/user/logs
+
+
+##C
+
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc AD5252.c -o AD5252
+```
+Run the c program.
+```cpp
+$>./AD5252
+```
 
 #####The code sets the digital value of resistance.
