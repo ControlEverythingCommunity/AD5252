@@ -10,7 +10,7 @@
 // AD5252 I2C address is 0x2C(44)
 #define Addr 0x2C
 
-float res_1 = 0.0, res_2 = 0.0;
+double res_1 = 0.0, res_2 = 0.0;
 void setup()
 {
   // Set variable
@@ -87,6 +87,7 @@ void loop()
 
   // Output data to dashboard
   Particle.publish("Resistance Channel-0 : ", String(res_1) + " K");
+  delay(1000);
   Particle.publish("Resistance Channel-1 : ", String(res_2) + " K");
-  delay(500);
+  delay(1000);
 }
