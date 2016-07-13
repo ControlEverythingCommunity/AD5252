@@ -4,7 +4,6 @@
 // This code is designed to work with the AD5252_I2CPOT_10K I2C Mini Module available from ControlEverything.com.
 // https://www.controleverything.com/content/Potentiometers?sku=AD5252_I2CPOT_10K#tabs-0-product_tabset-2
 
-
 #include<Wire.h>
 
 // AD5252 I2C address is 0x2C(44)
