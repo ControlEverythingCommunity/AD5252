@@ -28,14 +28,14 @@ time.sleep(0.5)
 data = i2c.readBytes(0x2C, 0x01, 1)
 
 # Convert the data
-res_1 = (data / 256.0 ) * 10.0
+res_1 = (data[0] / 256.0 ) * 10.0
 
 # AD5252 address, 0x2C(44)
 # Read data back from 0x03(03), 1 byte
 data = i2c.readBytes(0x2C, 0x03, 1)
 
 # Convert the data
-res_2 = (data / 256.0 ) * 10.0
+res_2 = (data[0] / 256.0 ) * 10.0
 
 # Output data to screen
 print "Resistance Channel-0 : %.2f K" %res_1
